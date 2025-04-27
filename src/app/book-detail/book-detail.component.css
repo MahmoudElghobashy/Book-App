@@ -1,0 +1,54 @@
+/* Container */
+:host {
+    display: block;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+   
+  /* Heading */
+  h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+   
+  /* Book details */
+  p {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 10px 0;
+    line-height: 1.5;
+  }
+   
+  p strong {
+    color: #007bff;
+    margin-right: 10px;
+  }
+   
+  /* Not found message */
+  p:not([strong]) {
+    text-align: center;
+    color: #dc3545;
+    font-weight: 500;
+  }
+   
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    :host {
+      padding: 15px;
+    }
+   
+    h2 {
+      font-size: 1.5rem;
+    }
+   
+    p {
+      font-size: 1rem;
+    }
+  }
+   
